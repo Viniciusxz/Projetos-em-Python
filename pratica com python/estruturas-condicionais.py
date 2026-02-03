@@ -8,12 +8,15 @@ if idade_maria > idade_beatriz:
 
 
 # Sistema de alunos aprovados ou reprovados.
+# Atualização 1 - Sistema com recuperação
 
 media = float(input('Digite a média: '))
 
 if media >= 6.0:
   print('Aprovado(a)!')
-else:
+if 6.0 > media >= 4.0:
+  print('Recuperação!')
+if media < 4.0:
   print('Reprovado(a)!')
 
 # Sistema com recuperação
