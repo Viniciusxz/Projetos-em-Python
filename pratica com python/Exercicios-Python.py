@@ -51,7 +51,13 @@ produto3 = float(input('Insira o valor do terceiro produto aqui: '))
 
 menor_produto = min(produto1, produto2, produto3)
 
-print(f'O produto mais barato para se comprar é o {menor_produto}')
+if menor_produto == produto1:
+    print(f'O produto mais barato para se comprar é o Produto 1 que custa {menor_produto}.')
+elif menor_produto == produto2:
+    print(f'O produto mais barato para se comprar é o Produto 2 que custa {menor_produto}.')
+else:
+    print(f'O produto mais barato para se comprar é o Produto 3 que custa {menor_produto}.')
+
 
 # 6) Escreva um programa que leia três números e os exiba em ordem decrescente.
 
