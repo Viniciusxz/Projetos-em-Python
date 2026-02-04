@@ -89,14 +89,19 @@ else:
 
 number = float(input('Digite um número aqui e confira se ele é ímpar ou par '))
 
-if number % 2 == 0:
+if number % 2 == 0: # todo número que é "dividido" com %, focamos na parte de sobra, quando realizamos um divisão por 2, oq importa aqui é o resto, se resta 1 ou 0, se resta 1 é impar, e se resta 0 é par.
     print('Seu número é par.')
 else:
     print('Seu número é ímpar.')
 
-
-
 # 9) Escreva um programa que peça um número à pessoa usuária e informe se ele é inteiro ou decimal.
+
+Numeror = float(input('Digite um número aqui: '))
+
+if Numeror.is_integer(): # Nesse caso, a sintaxe .is_integer, analisa o numero, e verifica se possui um numero decimal ou não, exemplo 5.0, apesar de parecer decimal por conta do .0, é inteiro, por que o 5 está sozinho e é inteiro, já se tivesse 5.1, ai sim seria decimal, por que tem o 1 acompanhado do 5.
+    print('O número é inteiro.')
+else:
+    print('O número é decimal.')
 
 # Momento dos projetos
 # 10) Um programa deve ser escrito para ler dois números e, em seguida, perguntar à pessoa usuária qual operação ele deseja realizar. O resultado da operação deve incluir informações sobre o número - se é par ou ímpar, positivo ou negativo e inteiro ou decimal.
