@@ -35,12 +35,11 @@ valor_carro1 = float(input('Informe a média de preço de um carro no seu primei
 valor_carro2 = float(input('Informe a média de preço de um carro no seu segundo ano: '))
 valor_carro3 = float(input('Informe a média de preço de um carro no seu terceiro ano: '))
 
-if valor_carro1 > valor_carro2 > valor_carro3:
-    print(f'O maior valor desse carro foi de {valor_carro1} e o menor valor foi de {valor_carro3}!')
-elif valor_carro2 > valor_carro3 > valor_carro1:
-     print(f'O maior valor desse carro foi de {valor_carro2} e o menor valor foi de {valor_carro1}!')
-elif valor_carro3 > valor_carro2 > valor_carro1:
-     print(f'O maior valor desse carro foi de {valor_carro3} e o menor valor foi de {valor_carro1}!')
+maior_valor = max(valor_carro1, valor_carro2, valor_carro3)
+menor_valor = min(valor_carro1, valor_carro2, valor_carro3)
+
+print(f'O maior valor deste carro foi de {maior_valor}!')
+print(f'O menor valor deste carro foi de {menor_valor}!')
 
 
 
