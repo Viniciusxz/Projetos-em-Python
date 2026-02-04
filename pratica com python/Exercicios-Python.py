@@ -45,6 +45,14 @@ print(f'O menor valor deste carro foi de {menor_valor}!')
 
 # 5) Escreva um programa que pergunte sobre o preço de três produtos e indique qual é o produto mais barato para comprar.
 
+produto1 = float(input('Insira o valor do primeiro produto aqui: '))
+produto2 = float(input('Insira o valor do segundo produto aqui: '))
+produto3 = float(input('Insira o valor do terceiro produto aqui: '))
+
+menor_produto = min(produto1, produto2, produto3)
+
+print(f'O produto mais barato para se comprar é o {menor_produto}')
+
 # 6) Escreva um programa que leia três números e os exiba em ordem decrescente.
 
 # 7) Escreva um programa que pergunte em qual turno a pessoa usuária estuda ("manhã", "tarde" ou "noite") e exiba a mensagem "Bom Dia!", "Boa Tarde!", "Boa Noite!", ou "Valor Inválido!", conforme o caso.
