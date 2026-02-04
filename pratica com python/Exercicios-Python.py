@@ -87,6 +87,13 @@ else:
 
 # 8) Escreva um programa que peça um número inteiro à pessoa usuária e determine se ele é par ou ímpar. Dica: Você pode utilizar o operador módulo %.
 
+number = float(input('Digite um número aqui e confira se ele é ímpar ou par '))
+
+if number % 2 == 0:
+    print('Seu número é par.')
+else:
+    print('Seu número é ímpar.')
+
 
 
 # 9) Escreva um programa que peça um número à pessoa usuária e informe se ele é inteiro ou decimal.
