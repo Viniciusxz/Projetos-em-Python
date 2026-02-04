@@ -61,6 +61,16 @@ else:
 
 # 6) Escreva um programa que leia três números e os exiba em ordem decrescente.
 
+numero1 = float(input('Informe um valor númerico aqui: '))
+numero2 = float(input('Informe um valor  outro númerico aqui: '))
+numero3 = float(input('Informe um valor  outro númerico aqui: '))
+
+numeros = [numero1, numero2, numero3]
+numeros.sort(reverse=True)
+
+print(f'Números em ordem decrescente: {numeros}') 
+
+
 # 7) Escreva um programa que pergunte em qual turno a pessoa usuária estuda ("manhã", "tarde" ou "noite") e exiba a mensagem "Bom Dia!", "Boa Tarde!", "Boa Noite!", ou "Valor Inválido!", conforme o caso.
 
 # 8) Escreva um programa que peça um número inteiro à pessoa usuária e determine se ele é par ou ímpar. Dica: Você pode utilizar o operador módulo %.
