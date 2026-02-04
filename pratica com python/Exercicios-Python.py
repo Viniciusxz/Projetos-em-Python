@@ -73,7 +73,21 @@ print(f'Números em ordem decrescente: {numeros}')
 
 # 7) Escreva um programa que pergunte em qual turno a pessoa usuária estuda ("manhã", "tarde" ou "noite") e exiba a mensagem "Bom Dia!", "Boa Tarde!", "Boa Noite!", ou "Valor Inválido!", conforme o caso.
 
+turno = str(input('Em que turno você estuda (manha, tarde ou noite)?: ')).lower() # lower para transformar todas as letras que o usuario escrever em minusculas, para ficar mais compreensivel.
+
+if turno == 'manha':
+    print('Bom dia!')
+elif turno == 'tarde':
+    print('Boa tarde!')
+elif turno == 'noite':
+    print('Boa noite!')
+else:
+    print('Valor inválido!') # se o usuario não digitar corretamente os horarios de turno, retornará um valor inválido ao usuario. 
+
+
 # 8) Escreva um programa que peça um número inteiro à pessoa usuária e determine se ele é par ou ímpar. Dica: Você pode utilizar o operador módulo %.
+
+
 
 # 9) Escreva um programa que peça um número à pessoa usuária e informe se ele é inteiro ou decimal.
 
