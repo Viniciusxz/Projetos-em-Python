@@ -106,6 +106,50 @@ else:
 # Momento dos projetos
 # 10) Um programa deve ser escrito para ler dois números e, em seguida, perguntar à pessoa usuária qual operação ele deseja realizar. O resultado da operação deve incluir informações sobre o número - se é par ou ímpar, positivo ou negativo e inteiro ou decimal.
 
+outro_numero1 = float(input('Escreva um número aqui: '))
+outro_numero2 = float(input('Escreva um outro número aqui: '))
+
+print('Escolha qual operação deseja selecionar para realizar uma operação')
+print(' SOMA SUBTRAÇÃO DIVISÃO MULTIPLICAÇÃO ')
+operacao = str(input()).lower()
+
+if operacao == 'soma':
+    resultado = outro_numero1 + outro_numero2
+elif operacao == 'subtracao':
+    resultado = outro_numero1 - outro_numero2
+elif operacao == 'divisao':
+    resultado = outro_numero1 / outro_numero2
+elif operacao == 'multiplicacao':
+    resultado = outro_numero1 * outro_numero2
+else:
+    print('Operação inválida.')
+    exit()
+
+if resultado % 2 == 0:
+    par_impar = 'Par'
+else:
+    par_impar = 'Impar'
+
+if resultado > 0:
+    positivo_negativo = 'Positivo'
+else:
+    positivo_negativo = 'Negativo'
+
+if resultado.is_integer():
+    numero_decimal = 'Inteiro'
+else:
+    numero_decimal = 'Decimal'
+
+print(f'Resultado da operação {resultado}.')
+print(f'Seu número é {par_impar}.')
+print(f'Seu número é {positivo_negativo}.')
+print(f'Seu número é {numero_decimal}.')
+
+
+#  se é par ou ímpar, positivo ou negativo e inteiro ou decimal.
+
+
+
 # 11) Escreva um programa que peça à pessoa usuária três números que representam os lados de um triângulo. O programa deve informar se os valores podem ser utilizados para formar um triângulo e, caso afirmativo, se ele é equilátero, isósceles ou escaleno. Tenha em mente algumas dicas:
 
 # Três lados formam um triângulo quando a soma de quaisquer dois lados for maior que o terceiro;
