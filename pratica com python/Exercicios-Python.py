@@ -110,7 +110,7 @@ outro_numero1 = float(input('Escreva um número aqui: '))
 outro_numero2 = float(input('Escreva um outro número aqui: '))
 
 print('Escolha qual operação deseja selecionar para realizar uma operação')
-print(' SOMA SUBTRAÇÃO DIVISÃO MULTIPLICAÇÃO ')
+print(' SOMA | SUBTRACAO | DIVISAO | MULTIPLICAÇAO ')
 operacao = str(input()).lower()
 
 if operacao == 'soma':
