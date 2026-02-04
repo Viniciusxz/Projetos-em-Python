@@ -10,6 +10,16 @@ else:
 
 # 2) Escreva um programa que solicite o percentual de crescimento de produção de uma empresa e informe se houve um crescimento (porcentagem positiva) ou decrescimento (porcentagem negativa).
 
+percentual_salario = float(input('Informe aqui o percentual de produção que sua empresa teve: '))
+
+if percentual_salario > 0:
+    print(f'Houve um crescimento de {percentual_salario}%!')
+elif percentual_salario < 0:
+    print(f'Houve um decrescimento de {percentual_salario}%!')
+else:
+    print(f'Seu crescimento {percentual_salario}% foi nulo!')
+
+
 # 3) Escreva um programa que determine se uma letra fornecida pela pessoa usuária é uma vogal ou consoante.
 
 # 4) Escreva um programa que leia valores médios de preços de um modelo de carro por 3 anos consecutivos e exiba o valor mais alto e mais baixo entre esses três anos.
