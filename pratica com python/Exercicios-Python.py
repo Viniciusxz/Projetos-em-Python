@@ -22,7 +22,27 @@ else:
 
 # 3) Escreva um programa que determine se uma letra fornecida pela pessoa usuária é uma vogal ou consoante.
 
+letra = str(input('Informe uma letra aqui!: ')).lower()
+
+if letra in 'aeiou':
+    print('Sua letra é uma vogal.')
+else:
+    print('Sua letra uma consoante.')
+
 # 4) Escreva um programa que leia valores médios de preços de um modelo de carro por 3 anos consecutivos e exiba o valor mais alto e mais baixo entre esses três anos.
+
+valor_carro1 = float(input('Informe a média de preço de um carro no seu primeiro ano: '))
+valor_carro2 = float(input('Informe a média de preço de um carro no seu segundo ano: '))
+valor_carro3 = float(input('Informe a média de preço de um carro no seu terceiro ano: '))
+
+if valor_carro1 > valor_carro2 > valor_carro3:
+    print(f'O maior valor desse carro foi de {valor_carro1} e o menor valor foi de {valor_carro3}!')
+elif valor_carro2 > valor_carro3 > valor_carro1:
+     print(f'O maior valor desse carro foi de {valor_carro2} e o menor valor foi de {valor_carro1}!')
+elif valor_carro3 > valor_carro2 > valor_carro1:
+     print(f'O maior valor desse carro foi de {valor_carro3} e o menor valor foi de {valor_carro1}!')
+
+
 
 # 5) Escreva um programa que pergunte sobre o preço de três produtos e indique qual é o produto mais barato para comprar.
 
