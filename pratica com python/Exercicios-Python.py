@@ -174,6 +174,36 @@ else:
 # O do valor do desconto será a multiplicação entre preço do litro, quantidade de litros e o valor do desconto.
 # O valor a ser pago por um cliente será o resultado da multiplicação do preço do litro pela quantidade de litros menos o valor de desconto resultante do cálculo.
 
+etanol = float(input('Informe aqui quantos litros de Etanol você deseja comprar: '))
+diesel = float(input('Informe aqui quantos litros de Diesel você deseja comprar: '))
+
+litro_etanol = 1.70
+litro_diesel = 2.0
+
+preco_litroE= etanol * litro_etanol
+preco_litroD = diesel * litro_diesel
+
+#Etanol
+if etanol <= 15:
+    preco_descontoE = preco_litroE * 0.02
+    preco_totalE = preco_litroE - preco_descontoE
+else:
+    preco_descontoE = preco_litroE * 0.04
+    preco_totalE = preco_litroE - preco_descontoE
+#Diesel
+if diesel <= 15:
+    preco_descontoD = preco_litroD * 0.03
+    preco_totalD = preco_litroD - preco_descontoD
+else:
+    preco_descontoD = preco_litroD * 0.05
+    preco_totalD = preco_litroD - preco_descontoD
+
+print(f'O valor total que voce obterá com litro de etanol é de {preco_totalE:.2f}')
+print(f'O valor total que voce obterá com litro de diesel é de {preco_totalD:.2f}')
+
+# 2% de desconto < 15 litros de etanol, 4% de desconto > 15 litros
+# 3% de desconto < 15 litros de diesel, 5% de desconto > 15 litros
+
 # 13) Em uma empresa de venda de imóveis você precisa criar um código que analise os dados de vendas anuais para ajudar a diretoria na tomada de decisão. O código precisa coletar os dados de quantidade de venda durante os anos de 2022 e 2023 e fazer um cálculo de variação percentual. A partir do valor da variação, deve ser enviada às seguintes sugestões:
 
 # Para variação acima de 20%: bonificação para o time de vendas.
