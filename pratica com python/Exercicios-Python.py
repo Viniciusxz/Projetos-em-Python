@@ -201,12 +201,24 @@ else:
 print(f'O valor total que voce obterá com litro de etanol é de {preco_totalE:.2f}')
 print(f'O valor total que voce obterá com litro de diesel é de {preco_totalD:.2f}')
 
-# 2% de desconto < 15 litros de etanol, 4% de desconto > 15 litros
-# 3% de desconto < 15 litros de diesel, 5% de desconto > 15 litros
-
 # 13) Em uma empresa de venda de imóveis você precisa criar um código que analise os dados de vendas anuais para ajudar a diretoria na tomada de decisão. O código precisa coletar os dados de quantidade de venda durante os anos de 2022 e 2023 e fazer um cálculo de variação percentual. A partir do valor da variação, deve ser enviada às seguintes sugestões:
 
 # Para variação acima de 20%: bonificação para o time de vendas.
 # Para variação entre 2% e 20%: pequena bonificação para time de vendas.
 # Para variação entre 2% e -10%: planejamento de políticas de incentivo às vendas.
 # Para variação abaixo de -10%: corte de gastos.
+
+quantidade_variacao22 = float(input('Digite aqui a quantidade de vendas de imoveis de 2022: '))
+quantidade_variacao23 = float(input('Digite aqui a quantidade de vendas de imoveis de 2023: '))
+
+quantidade_variacaoSoma = ((quantidade_variacao22 - quantidade_variacao23) / quantidade_variacao22) * 100
+
+if quantidade_variacaoSoma > 20:
+    print('O time de vendas receberá 20% de bonificação pois obteve um resultado maior que 20%')
+elif quantidade_variacaoSoma >= 2 and quantidade_variacaoSoma <= 20:
+    print('O time de vendas receberá uma pequena bonificação, pois obteve um lucro entre 2% e 20%')
+elif quantidade_variacaoSoma < -10 and  quantidade_variacaoSoma < 2:
+    print('O time de vendas receberá um incentivo ao planejamento de políticias de incentivo às vendas, pois obteve um prejuziso de entre 2% e -10%')
+else:
+    print('O time de vendas terá corte de gastos.') 
+
