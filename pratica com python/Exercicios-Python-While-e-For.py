@@ -49,7 +49,7 @@ contador_temperatura = 0
 soma = 0
 temperatura = 0
 
-while True:
+while True: # nesse exercicio, quando colocamos true, significa que nós não sabemos quantas vezes o usuario irá digitar um valor de temperaturas, por isso true está ali, por que o exericcio pede um conjundo indeterminado, se fosse determinado, ai colocariamos um contador.
     print(f'Calculo de média de temperaturas')
     temperatura = float(input('Informe uma temperatura: '))
 
