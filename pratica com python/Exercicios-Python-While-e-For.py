@@ -66,10 +66,30 @@ print(f'Sua média de temperatura digitadas é de {media}')
 
 # 5) Escreva um programa que calcule o fatorial de um número inteiro fornecido pela pessoa usuária. Lembrando que o fatorial de um número inteiro é a multiplicação desse número por todos os seus antecessores até o número 1. Por exemplo, o fatorial de 5 é 5 x 4 x 3 x 2 x 1 = 120.
 
+numero = int(input('Digite um número para descobrir seu valor fatorial aqui!: '))
 
+fatorial = 1
+
+while numero > 1:
+    fatorial = fatorial * numero
+    numero -= 1
+
+print(f'O fatorial desse número é {fatorial}')
 
 # Momento dos projetos
 # 6) Escreva um programa que gere a tabuada de um número inteiro de 1 a 10, de acordo com a escolha da pessoa usuária. Como exemplo, para o número 2, a tabuada deve ser mostrada no seguinte formato:
+
+print('Bem vindo a minha tabuada!')
+print('Informe um número para saber quais seus valores multiplicados de 1 até 10.')
+numero_mult = int(input())
+multiplicacao = 1
+
+while multiplicacao <= 10:
+    valor = numero_mult * multiplicacao
+    print(f'{numero_mult} x {multiplicacao} = {valor}')
+    multiplicacao += 1
+
+print(f'Tabuada completa!')
 
 # 7) Os números primos possuem várias aplicações dentro da Ciência de Dados em criptografia e segurança, por exemplo. Um número primo é aquele que é divisível apenas por um e por ele mesmo. Assim, faça um programa que peça um número inteiro e determine se ele é ou não um número primo.
 
@@ -79,4 +99,4 @@ print(f'Sua média de temperatura digitadas é de {media}')
 
 # Cada colaborador(a) votou em uma das quatro pessoas candidatas (que representamos pelos números 1, 2, 3 e 4).
 # Também foram contabilizados os votos nulos (representados pelo número 5) e os votos em branco (representados pelo número 6).
-# Ao final da votação, o programa deve exibir o número total de votos para cada candidato(a), os nulos e os votos em branco. Além disso, deve calcular e exibir a porcentagem de votos nulos em relação ao total de votos e a porcentagem de votos em branco em relação ao total de votos.
+# Ao final da votação, o programa deve exibir o número total de votos para cada candidato(a), os nulos e os votos em branco. Além disso, deve calcular e exibir a porcentagem de votos nulos em relação ao total de votos e a porcentagem de votos em branco em relação ao total de votos
