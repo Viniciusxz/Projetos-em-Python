@@ -29,9 +29,44 @@ print(f"Serão necessários {dias} dias.")
 
 # 3) Para tratar uma quantidade de 15 dados de avaliações de pessoas usuárias de um serviço da empresa, precisamos verificar se as notas são válidas. Então, escreva um programa que vai receber a nota de 0 a 5 de todos os dados e verificar se é um valor válido. Caso seja inserido uma nota acima de 5 ou abaixo de 0, repita até que a pessoa usuária insira um valor válido.
 
+usuario = 1
+
+while usuario <= 15:
+    print(f'Avaliação do usuario número {usuario}.')
+
+    avaliacao = float(input('Digite uma nota de 0 a 5 aqui: '))
+
+    while avaliacao < 0 or avaliacao > 5:
+        print('Nota inválida!, Digite um valor novamente de 0 a 5.')
+        avaliacao = float(input('Digite uma nota de 0 a 5: '))
+
+    print('Nota válida!')
+    usuario += 1
+
 # 4) Desenvolva um programa que leia um conjunto indeterminado de temperaturas em Celsius e informe a média delas. A leitura deve ser encerrada ao ser enviado o valor -273°C.
 
+contador_temperatura = 0
+soma = 0
+temperatura = 0
+
+while True:
+    print(f'Calculo de média de temperaturas')
+    temperatura = float(input('Informe uma temperatura: '))
+
+    if temperatura == -273:
+        break
+    else:
+        soma = soma + temperatura
+        contador_temperatura += 1
+
+media = soma / contador_temperatura
+
+print(f'Sua média de temperatura digitadas é de {media}')
+
+
 # 5) Escreva um programa que calcule o fatorial de um número inteiro fornecido pela pessoa usuária. Lembrando que o fatorial de um número inteiro é a multiplicação desse número por todos os seus antecessores até o número 1. Por exemplo, o fatorial de 5 é 5 x 4 x 3 x 2 x 1 = 120.
+
+
 
 # Momento dos projetos
 # 6) Escreva um programa que gere a tabuada de um número inteiro de 1 a 10, de acordo com a escolha da pessoa usuária. Como exemplo, para o número 2, a tabuada deve ser mostrada no seguinte formato:
