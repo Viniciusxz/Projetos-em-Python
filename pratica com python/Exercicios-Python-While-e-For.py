@@ -1,6 +1,31 @@
 #1) Escreva um programa que peça dois números inteiros e imprima todos os números inteiros entre eles.
 
+num1 = int(input('Digite um número aqui! -> '))
+num2 = int(input('Digite outro número aqui! -> '))
+
+inicio = min(num1, num2)
+fim = max(num1, num2)
+
+for i in range(inicio + 1, fim): # Aqui, como o usuario não quer o primeiro numero repetido, adicionamos +1 para não aparecer o primeiro numero digitado, e no fim, nao precisa colocar mais uma soma, pois a função ja puxa o numero antes do original digitado.
+    print(i) 
+
 # 2) Escreva um programa para calcular quantos dias levará para a colônia de uma bactéria A ultrapassar ou igualar a colônia de uma bactéria B, com base nas taxas de crescimento de 3% e 1,5% respectivamente. Considere que a colônia A inicia com 4 elementos e a B com 10.
+
+coloniaA = 4
+coloniaB = 10
+
+taxaA = 0.03
+taxaB = 0.015
+
+dias = 0
+
+while coloniaA < coloniaB:
+    coloniaA = coloniaA + (coloniaA * taxaA)
+    coloniaB = coloniaB + (coloniaB * taxaB)
+    dias += 1
+
+print(f"Serão necessários {dias} dias.")
+
 
 # 3) Para tratar uma quantidade de 15 dados de avaliações de pessoas usuárias de um serviço da empresa, precisamos verificar se as notas são válidas. Então, escreva um programa que vai receber a nota de 0 a 5 de todos os dados e verificar se é um valor válido. Caso seja inserido uma nota acima de 5 ou abaixo de 0, repita até que a pessoa usuária insira um valor válido.
 
