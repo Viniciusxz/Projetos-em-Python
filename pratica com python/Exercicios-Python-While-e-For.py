@@ -110,6 +110,39 @@ else:
 
 # 8) Vamos entender a distribuição de idades de pensionistas de uma empresa de previdência. Escreva um programa que leia as idades de uma quantidade não informada de clientes e mostre a distribuição em intervalos de [0-25], [26-50], [51-75] e [76-100]. Encerre a entrada de dados com um número negativo.
 
+print('Distribuição de idades:')
+idade0_25 = 0
+idade26_50 = 0
+idade51_75 = 0
+idade76_100 = 0
+
+while True:
+    contador_idade = int(input('Digite sua idade aqui para separarmos por faixa de idade: '))
+
+    if contador_idade < 0:
+        break
+
+    if 0 <= contador_idade <= 25:
+        idade0_25 += 1
+        print(f'Faixa 0-25: {idade0_25} pessoas.')
+    elif 26 <= contador_idade <= 50:
+        idade26_50 += 1
+        print(f'Faixa 26-50 {idade26_50} pessoas.')
+    elif  51 <= contador_idade <= 75:
+        idade51_75 += 1
+        print(f'Faixa 51-75 {idade51_75} pessoas.')
+    elif 76 <= contador_idade <= 100:
+        idade76_100 += 1
+        print(f'Faixa 76-100 {idade76_100} pessoas.')
+    else:
+        print('Idade fora do intervalo de 0 a 100.')
+
+
+# faixa0_25 = int(input()) 
+# faixa26_50 = int(input())
+# faixa51_75 = int(input())
+# faixa76_100 = int(input())
+
 # 9) Em uma eleição para gerência em uma empresa com 20 pessoas colaboradoras, existem quatro candidatos(as). Escreva um programa que calcule o(a) vencedor(a) da eleição. A votação ocorreu da seguinte maneira:
 
 # Cada colaborador(a) votou em uma das quatro pessoas candidatas (que representamos pelos números 1, 2, 3 e 4).
