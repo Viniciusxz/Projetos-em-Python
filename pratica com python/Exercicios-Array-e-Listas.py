@@ -44,6 +44,26 @@ print(f'Haha!, Inverti seus números! agora olha como eles estão: {numeros_ofic
 
 #5) Faça um programa que, ao inserir um número qualquer, cria uma lista contendo todos os números primos entre 1 e o número digitado.
 
+n = int(input('Digite um número: '))
+
+lista_primos = []
+
+for numero in range(2, n + 1):
+    primo = True
+    divisor = 2
+
+    while divisor < numero:
+        if numero % divisor == 0:
+            primo = False
+            break
+        divisor += 1
+
+    if primo:
+        lista_primos.append(numero)
+
+print(lista_primos)
+
+
 #6) Escreva um programa que peça uma data informando o dia, mês e ano e determine se ela é válida para uma análise.
 
 #Momento dos projetos
