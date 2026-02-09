@@ -32,6 +32,16 @@ print(numeros_oficial)
 
 #4) Colete novamente 5 inteiros e imprima a lista em ordem inversa à enviada.
 
+contador_numeros2 = 1
+numeros_oficial_2 = []
+
+while contador_numeros2 < 6:
+    numeros1 = int(input('Digite aqui um número: '))
+    numeros_oficial_2.append(numeros1)
+    contador_numeros2 += 1
+
+print(f'Haha!, Inverti seus números! agora olha como eles estão: {numeros_oficial_2[::-1]}')
+
 #5) Faça um programa que, ao inserir um número qualquer, cria uma lista contendo todos os números primos entre 1 e o número digitado.
 
 #6) Escreva um programa que peça uma data informando o dia, mês e ano e determine se ela é válida para uma análise.
