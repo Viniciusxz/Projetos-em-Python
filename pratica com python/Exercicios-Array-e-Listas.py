@@ -7,8 +7,28 @@ media_empresa = soma_empresa / produtos
 print(f'A empresa teve um total de {produtos} produtos e teve uma média de lucro de {media_empresa}.')
 
 #2) Com os mesmos dados da questão anterior, defina quantas compras foram realizadas acima de 3000 reais e calcule a porcentagem quanto ao total de compras.
+contar_produtos = 0
+
+for valor_alto in papel_empresa:
+    if valor_alto > 3000:
+        contar_produtos += 1
+
+total_compras = len(papel_empresa)
+porcentagem = (contar_produtos / total_compras) * 100
+
+print(f'Foram realizadas {contar_produtos} compras acima de 3000 reais!')
+print(f'A porcentagem total de compras é de {porcentagem:.2f}%')
 
 #3) Faça um código que colete em uma lista 5 números inteiros quaisquer e imprima a lista. Exemplo: [1,4,7,2,4].
+contador_numeros = 1
+numeros_oficial = []
+
+while contador_numeros < 6:
+    numeros = int(input('Digite aqui um número: '))
+    numeros_oficial.append(numeros)
+    contador_numeros += 1
+
+print(numeros_oficial)
 
 #4) Colete novamente 5 inteiros e imprima a lista em ordem inversa à enviada.
 
