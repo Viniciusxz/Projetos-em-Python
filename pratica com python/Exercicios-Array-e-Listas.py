@@ -103,6 +103,33 @@ for dias in range(1, len(bacterias)):
 
 #8) Para uma seleção de produtos alimentícios, precisamos separar o conjunto de IDs dados por números inteiros sabendo que os produtos com ID par são doces e os com ID ímpar são amargos. Monte um código que colete 10 IDs. Depois, calcule e mostre a quantidade de produtos doces e amargos.
 
+alimento = {'Limão':1,
+            'Chocolate':2,
+            'Iorgute Natural':3,
+            'Pudim':4,
+            'Acerola':5,
+            'Biscoito':6,
+            'Chocolate Amargo':7,
+            'Doce de leite':8,
+            'Maracujá':9,
+            'Brigadeiro':10
+            }
+
+ids = []
+doces = 0
+amargos = 0
+
+for i in range(10):
+    id_digito = (int(input('Digite um ID de 1 a 10: '))) 
+    ids.append(id_digito)
+
+    if id_digito % 2 == 0:
+        doces += 1
+    else:
+        amargos += 1
+
+print(f'Você conseguiu {len(doces)} produtos doces e {len(amargos)} produtos azedos!')
+
 #9) Desenvolva um programa que informa a nota de um(a) aluno(a) de acordo com suas respostas. Ele deve pedir a resposta desse(a) aluno(a) para cada questão e é preciso verificar se a resposta foi igual ao gabarito. Cada questão vale um ponto e existem as alternativas A, B, C ou D.
 
 #10) Um instituto de meteorologia deseja fazer um estudo de temperatura média de cada mês do ano. Para isso, você precisa fazer um código que colete e armazene essas temperaturas médias em uma lista. Depois, calcule a média anual das temperaturas e mostre todas as temperaturas acima da média anual e em que mês elas ocorreram, mostrando os meses por extenso (Janeiro, Fevereiro, etc.).
