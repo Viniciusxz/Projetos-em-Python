@@ -89,11 +89,17 @@ if 1 <= data <= max_dias_mes: # DATA
 else:
     print('Data Inválida.')
 
-
-
-
 #Momento dos projetos
 #7) Para um estudo envolvendo o nível de multiplicação de bactérias em uma colônia, foi coletado o número de bactérias por dia (em milhares) e pode ser observado a seguir: [1.2, 2.1, 3.3, 5.0, 7.8, 11.3, 16.6, 25.1, 37.8, 56.9]. Tendo esses valores, faça um código que gere uma lista contendo o percentual de crescimento de bactérias por dia, comparando o número de bactérias em cada dia com o número de bactérias do dia anterior. Dica: para calcular o percentual de crescimento usamos a seguinte equação: 100 * (amostra_atual - amostra_passada) / (amostra_passada).
+
+bacterias = [1.2, 2.1, 3.3, 5.0, 7.8, 11.3, 16.6, 25.1, 37.8, 56.9]
+
+for dias in range(1, len(bacterias)):
+    dia_atual = bacterias[dias]
+    dia_anterior = bacterias[dias - 1] 
+    percentual = 100 * (dia_atual - dia_anterior) / dia_anterior
+    print(f'Houve um crescimento de multiplicação de {percentual}%.')
+
 
 #8) Para uma seleção de produtos alimentícios, precisamos separar o conjunto de IDs dados por números inteiros sabendo que os produtos com ID par são doces e os com ID ímpar são amargos. Monte um código que colete 10 IDs. Depois, calcule e mostre a quantidade de produtos doces e amargos.
 
