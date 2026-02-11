@@ -137,12 +137,6 @@ while True:
     else:
         print('Idade fora do intervalo de 0 a 100.')
 
-
-# faixa0_25 = int(input()) 
-# faixa26_50 = int(input())
-# faixa51_75 = int(input())
-# faixa76_100 = int(input())
-
 # 9) Em uma eleição para gerência em uma empresa com 20 pessoas colaboradoras, existem quatro candidatos(as). Escreva um programa que calcule o(a) vencedor(a) da eleição. A votação ocorreu da seguinte maneira:
 
 # Cada colaborador(a) votou em uma das quatro pessoas candidatas (que representamos pelos números 1, 2, 3 e 4).
