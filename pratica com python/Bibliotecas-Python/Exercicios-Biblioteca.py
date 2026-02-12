@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib as mp
-from random import choice, randrange, randint 
+from random import choice, randrange, randint, sample
+
 # 1. Escreva um código para instalar a versão 3.7.1 da biblioteca matplotlib.
 
 # crtl+shift+' e digitar no terminal python -m pip install matplotlib'
@@ -46,12 +47,17 @@ nome = str(input('Digite seu nome aqui: '))
 token = randrange(1000, 9998, 2)
 
 print(f'Olá, {nome}, o seu token de acesso é {token}! Seja bem vindo(a)!')
-    
-
-
-
-# "Olá, [nome], o seu token de acesso é [token]! Seja bem-vindo(a)!"
 
 # 8. Para diversificar e atrair novos(as) clientes, uma lanchonete criou um item misterioso em seu cardápio chamado "salada de frutas surpresa". 
-# Neste item, são escolhidas aleatoriamente 3 frutas de uma lista de 12 para compor a salada de frutas da pessoa cliente. Crie o código que faça essa seleção aleatória de acordo com a lista abaixo:
+# Neste item, são escolhidas aleatoriamente 3 frutas de uma lista de 12 para compor a salada de frutas da pessoa cliente. Crie o código que faça essa seleção 
+# aleatória de acordo com a lista abaixo:
 
+print('Estamos realizando uma salada de frutas surpresa. Vamos ver qual salada de fruta você receberá! ?')
+
+frutas = ["maçã", "banana", "uva", "pêra", 
+          "manga", "coco", "melancia", "mamão",
+          "laranja", "abacaxi", "kiwi", "ameixa"]
+
+frutas_escolhidas = sample(frutas, 3)
+
+print(f'Sua salada de frutas contém {frutas_escolhidas}. Que delícia!')
