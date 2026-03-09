@@ -17,3 +17,32 @@ def tabuada(numero_escolhido):
         print(f'{multiplicador} x {numero_escolhido} = {resultado}')
 tabuada(numero)
     
+# 3. Crie a função que leia a lista abaixo e retorne uma nova lista com os múltiplos de 3:
+
+numeros = [97, 80, 94, 88, 80, 1, 16, 53, 62, 32, 24, 99]
+
+def multiplos(multiplos_3):
+    multiplosPor3 = []
+
+    for numero in multiplos_3:
+        if numero % 3 == 0:
+            multiplosPor3.append(numero)
+        else:
+            print(f'Não é divisivel por 3: {numero}')
+    return(multiplosPor3)
+
+resultado = multiplos(numeros)
+print(resultado)
+
+# 4. Crie uma lista dos quadrados dos números da seguinte lista [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]. Lembre-se de utilizar as funções lambda e map() para calcular o quadrado de cada elemento da lista.
+
+numeros_inteiros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+quadrados = list(
+    map(
+        lambda x: x ** 2,
+        numeros_inteiros
+    )
+)
+
+print(quadrados)

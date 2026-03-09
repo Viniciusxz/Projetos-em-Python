@@ -3,7 +3,7 @@
 num1 = int(input('Digite um número aqui! -> '))
 num2 = int(input('Digite outro número aqui! -> '))
 
-inicio = min(num1, num2)
+inicio = min(num1, num2) # for i in range(1, 11)
 fim = max(num1, num2)
 
 for i in range(inicio + 1, fim): # Aqui, como o usuario não quer o primeiro numero repetido, adicionamos +1 para não aparecer o primeiro numero digitado, e no fim, nao precisa colocar mais uma soma, pois a função ja puxa o numero antes do original digitado.
