@@ -61,3 +61,5 @@ frutas = ["maçã", "banana", "uva", "pêra",
 frutas_escolhidas = sample(frutas, 3)
 
 print(f"Sua salada de frutas contém {', '.join(frutas_escolhidas)}. Que delícia!")
+
+
